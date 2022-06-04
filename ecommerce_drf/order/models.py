@@ -27,7 +27,7 @@ class Order(models.Model):
         verbose_name_plural = 'Orders'
 
     def __str__(self):
-        return self.first_name
+        return f'{self.id} - {self.first_name} {self.last_name} - {self.created_at}'
 
 
 class OrderItem(models.Model):
